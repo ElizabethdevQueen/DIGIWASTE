@@ -159,6 +159,18 @@ h6 {
 .main-pages {
   margin-top: 60px;
 }
+.main-nav{
+  text-transform: uppercase;
+  font-size: x-large;
+}
+.lgbtn{
+  border: 2px solid #00366f;
+  border-radius: 10px;
+}
+.main-nav .lgbtn:hover{
+  background:  #00366f;
+  color: #fff !important;
+}
 
 /*--------------------------------------------------------------
 # Intro Section

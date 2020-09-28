@@ -25,7 +25,7 @@
 
 .top_navbar .hamburger{
   width: 80px;
-  background: #004D40;
+  background: #004289;
   position: relative;
   font-size: 28px;
 }
@@ -68,9 +68,11 @@
 }
 
 .top_navbar .menu .logo{
-  color: #004D40;
+  color: #004289;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-weight: 800;
+  font-size: x-large;
 }
 
 .top_navbar .menu .right_menu ul{
@@ -84,7 +86,7 @@
 .top_navbar .menu .right_menu ul li .fas{
   font-size: 22px;
   cursor: pointer;
-  color: #004D40;
+  color: #004289;
 }
 
 .top_navbar .menu .right_menu ul li .profile_dd{
@@ -107,7 +109,7 @@
 .top_navbar .menu .right_menu ul li .profile_dd .dd_item{
   padding: 10px;
   cursor: pointer;
-  color: #004D40;
+  color: #004289;
 }
 
 .top_navbar .menu .right_menu ul li .profile_dd .dd_item:hover{
@@ -129,7 +131,8 @@
   left: 0;
   width: 225px;
   height: 100%;
-  background: #004D40;
+  /* background: #004D40; */
+  background: #004289;
   transition: all 0.3s ease;
 }
 
@@ -191,12 +194,12 @@
 .main_container .sidebar ul li a:hover,
 .main_container .sidebar ul li a.active{
   background: #fff;
-  color: #004D40;
+  color: #004289;
 }
 
 .main_container .container .item{
   background: #fff;
-  border: 3px solid #E0F2F1;
+  border: 3px solid #e9e9f0;
   margin-bottom: 30px;
   margin-left: 15px;
   padding: 20px;
@@ -204,6 +207,9 @@
   line-height: 22px;
   /* display: inline-flex; */
 }
+/* .main_container .container .item:hover{
+  transition: all 0.3s ease-in-out;
+} */
 .main_container .container{
   display: flex;
   /* margin: 10px; */
