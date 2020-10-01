@@ -660,7 +660,9 @@ h6 {
   text-transform: uppercase;
 }
 #team .row{
-  margin-left: 180px;
+  /* margin-left: 180px; */
+  margin: auto;
+  justify-content: space-around;
 }
 #team .member {
   text-align: center;
@@ -1158,6 +1160,17 @@ h6 {
   .single-footer:first-child, .single-footer {
     width: 100%;
     margin-bottom:30px;
+  }
+  #team{
+    height: auto;
+  }
+  #team .row{
+    margin: auto;
+    width: auto;
+  }
+  #team .member{
+    margin-bottom: 25px;
+    height: ;
   }
 }
 

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/user.css">
+
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".hamburger .hamburger__inner").click(function () {
+                $(".wrapper").toggleClass("active")
+            })
+
+            $(".top_navbar .fas").click(function () {
+                $(".profile_dd").toggleClass("active");
+            });
+        })
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <div class="hamburger__inner">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="logo">
+                    DigiWaste
+                </div>
+                <div class="right_menu">
+                    <ul>
+                        <li><i class="fas fa-user"></i>
+                            <div class="profile_dd">
+                                <div class="dd_item"><a href="../index.html">Home</a></div>
+                                <div class="dd_item"><a href="./profile.html">Profile</a></div>
+                                <div class="dd_item">Change Password</div>
+                                <div class="dd_item">Logout</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+    <div class="container">
+        <div class="view-account">
+            <section class="module">
+                <div class="module-inner">
+                    <div class="side-bar">
+                        <div class="user-info">
+                            <img class="img-profile img-circle img-responsive center-block"
+                                src="../img/team-2.jpg" alt="">
+                            <div class="meta">
+                                <div class="name">BECKY HOUSE
+                                    <label class="label label-info">ID: 10012435</label>
+                                </div>
+                            </div>
+                        </div>
+                        <nav class="side-menu">
+                            <ul class="nav">
+                                <li class="active"><a href="#"><span class="fa fa-user"></span> Profile</a></li>
+                                <li><a href="#"><span class="fa fa-cog"></span> Settings</a></li>
+                                <li><a href="#"><span class="fa fa-credit-card"></span> Billing</a></li>
+                                <li><a href="#"><span class="fa fa-envelope"></span> Messages</a></li>
+                                <li><a href="#"><span class="fa fa-clock-o"></span> Reminders</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="content-panel">
+                        <h2 class="title">Profile</h2>
+                        <form class="form-horizontal">
+                            <fieldset class="fieldset">
+                                <h3 class="fieldset-title">Personal Info</h3>
+                                <div class="form-group avatar">
+                                    <figure class="figure col-md-2 col-sm-3 col-xs-12">
+                                        <img class="img-rounded img-responsive"
+                                            src="../img/team-2.jpg" alt="">
+                                    </figure>
+                                    <div class="form-inline col-md-10 col-sm-9 col-xs-12">
+                                        <input type="file" class="file-uploader pull-left">
+                                        <button type="submit" class="btn btn-sm btn-default-alt pull-left">Update
+                                            Image</button>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-2 col-sm-3 col-xs-12 control-label">User Name</label>
+                                    <div class="col-md-10 col-sm-9 col-xs-12">
+                                        <input type="text" class="form-control" placeholder="User ID">
+                                    </div>
+                                </div>
+    
+                                <div class="form-group">
+                                    <label class="col-md-2 col-sm-3 col-xs-12 control-label">House Name</label>
+                                    <div class="col-md-10 col-sm-9 col-xs-12">
+                                        <input type="text" class="form-control" placeholder="Your House name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-2 col-sm-3 col-xs-12 control-label">Last Name</label>
+                                    <div class="col-md-10 col-sm-9 col-xs-12">
+                                        <input type="text" class="form-control" placeholder="Y">
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="fieldset">
+                                <h3 class="fieldset-title">Contact Info</h3>
+                                <div class="form-group">
+                                    <label class="col-md-2  col-sm-3 col-xs-12 control-label">Email</label>
+                                    <div class="col-md-10 col-sm-9 col-xs-12">
+                                        <input type="email" class="form-control" placeholder="Rebecca@website.com">
+                                        <span class="help-block">"Landord/House rep email address" </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-2  col-sm-3 col-xs-12 control-label">Mobile Number</label>
+                                    <div class="col-md-10 col-sm-9 col-xs-12">
+                                        <input type="number" class="form-control" placeholder="+234880000000">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-2  col-sm-3 col-xs-12 control-label">Linkedin</label>
+                                    <div class="col-md-10 col-sm-9 col-xs-12">
+                                        <input type="url" class="form-control" placeholder="House address">
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <hr>
+                            <div class="form-group">
+                                <div class="col-md-10 col-sm-9 col-xs-12 col-md-push-2 col-sm-push-3 col-xs-push-0">
+                                    <input class="btn btn-primary" type="submit" value="Update Profile">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
