@@ -11,7 +11,7 @@
 
 .wrapper{
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .top_navbar{
@@ -124,13 +124,16 @@
   border: 10px solid;
   border-color: transparent transparent #fff transparent;
 }
+.main_container, .wrapper, .sidebar{
+  height: auto;
+}
 
 .main_container .sidebar{
   position: fixed;
   top: 60px;
   left: 0;
   width: 225px;
-  height: 100%;
+  height: 100vh;
   /* background: #004D40; */
   background: #004289;
   transition: all 0.3s ease;
@@ -233,4 +236,5 @@
 .wrapper.active .main_container .container{
   width: calc(100% - 80px);
   margin-left: 80px;
+  height: 100vh;
 }

@@ -1,0 +1,86 @@
+/*------------------------------------------------------------------
+* Bootstrap Simple Admin Template
+* Version: 1.2
+* Author: Alexis Luna
+* Copyright 2020 Alexis Luna
+* Website: https://github.com/alexis-luna/bootstrap-simple-admin-template
+-------------------------------------------------------------------*/
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #004289;
+    color: #fff;
+    transition: all 0.3s;
+    border-right: 1px solid #e6ecf5;
+    /* position: fixed; */
+}
+
+#sidebar.active {
+    margin-left: -250px;
+    color: #fff;
+}
+
+#sidebar .sidebar-header {
+    padding: 1rem;
+    border-bottom: 1px solid #e6ecf5;
+    max-height: 65px;
+    font-size: medium;
+    font-weight: 600;
+}
+
+#sidebar ul.components {
+    padding: 0 0;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: .8rem 1.5rem;
+    font-size: 1.3rem;
+    display: block;
+    color: #fff;
+    background: #004289;
+}
+
+#sidebar ul li a .svg-inline--fa {
+    min-width: 20px;
+    margin-right: 5px;
+}
+
+#sidebar ul li a:hover,
+#sidebar ul li a.active {
+    color: #2196F3;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: inherit;
+}
+
+#sidebar ul ul a {
+    font-size: 1rem;
+    background: #74a7da;
+}
+
+#sidebar a[data-toggle="collapse"] {
+    position: relative;
+}
+
+#sidebar .dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #sidebarCollapse span {
+        display: none;
+    }
+}
