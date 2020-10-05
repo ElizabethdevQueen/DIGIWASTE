@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Option</title>
+    <!-- css stylesheet link -->
+    <link rel="stylesheet" href="../css/payment.css">
+    <link rel="stylesheet" href="../css/user.css">
+
+    <!-- ========================================= -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css'>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css'>
+    <!-- ======================================== -->
+    
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js'></script>
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/user.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".hamburger .hamburger__inner").click(function () {
+                $(".wrapper").toggleClass("active")
+            })
+
+            $(".top_navbar .fas").click(function () {
+                $(".profile_dd").toggleClass("active");
+            });
+        })
+    </script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <div class="hamburger__inner">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="logo">
+                    DigiWaste
+                </div>
+                <div class="right_menu">
+                    <ul>
+                        <li><i class="fas fa-user"></i>
+                            <div class="profile_dd">
+                                <div class="dd_item"><a href="index.html">Home</a></div>
+                                <div class="dd_item"><a href="./Dashboard/profile.html">Profile</a></div>
+                                <div class="dd_item">Messages</div>
+                                <div class="dd_item">Logout</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_container" style="margin-top: 40px;">
+            <div class="sidebar">
+                <div class="sidebar__inner">
+                    <div class="profile">
+                        <div class="img">
+                            <img src="../img/Ifemi.jpg" alt="profile_pic">
+                        </div>
+                        <div class="profile_info">
+                            <p>Welcome</p>
+                            <p class="profile_name">Elizabeth</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="../user.html" class="active" id="dashboard">
+                                <span class="icon"><i class="fas fa-dice-d6"></i></span>
+                                <span class="title">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./payment.html" id="payment">
+                                <span class="icon"><i class="fab fa-delicious"></i></span>
+                                <span class="title">Payment </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="reminder">
+                                <span class="icon"><i class="fab fa-elementor"></i></span>
+                                <span class="title">Messages</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./profile.html" id="profile">
+                                <span class="icon"><i class="fas fa-border-all"></i></span>
+                                <span class="title">Account <br>Update</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon"><i class="fas fa-chart-pie"></i></span>
+                                <span class="title">Feedback/<br>Complaints</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="container" style="width: 50%; border: 2px solid; margin: auto; margin-top: 50%;">
+                <div class="row">
+                    <div class="col-xs-12 col-md-4" >
+                        <div class="panel panel-default" style="width: 250%; margin-left: 80px; margin-top: 100px;">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    Payment Details
+                                </h3>
+                                <div class="checkbox pull-right">
+                                    <label>
+                                        <input type="checkbox" />
+                                        Remember
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <label for="cardNumber">
+                                            CARD NUMBER</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number"
+                                                required autofocus />
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-7 col-md-7">
+                                            <div class="form-group">
+                                                <label for="expityMonth">
+                                                    EXPIRY DATE</label>
+                                                <div class="col-xs-6 col-lg-6 pl-ziro">
+                                                    <input type="text" class="form-control" id="expityMonth" placeholder="MM"
+                                                        required />
+                                                </div>
+                                                <div class="col-xs-6 col-lg-6 pl-ziro">
+                                                    <input type="text" class="form-control" id="expityYear" placeholder="YY"
+                                                        required /></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-5 col-md-5 pull-right">
+                                            <div class="form-group">
+                                                <label for="cvCode">
+                                                    CV CODE</label>
+                                                <input type="password" class="form-control" id="cvCode" placeholder="CV" required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        
+                        <a href="http://www.jquery2dotnet.com" style="width: 250%; margin-left: 80px;" class="btn btn-success btn-lg btn-block" role="button">Make Payment</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    <div class="container">
+        <h1 id="heading"></h1>
+        <div id="content"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/user.js"></script>
+</body>
+
+</html>
