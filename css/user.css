@@ -176,6 +176,10 @@
   display: flex;
   /* flex-wrap: wrap; */
 }
+/* .main_container .container .item .status{
+  border: 2px solid #000;
+  color: #000;
+} */
 .main_container .userform{
   margin-left: 35%;
   border: 2px solid #000;
