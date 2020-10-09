@@ -14,6 +14,8 @@
     
     <!-- Bootstrap CSS File -->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     
     <!-- Libraries CSS Files -->
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -42,7 +44,7 @@
     <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/util.css"> -->
     <link rel="stylesheet" type="text/css" href="css/login.css">
     
     <!--===============================================================================================-->
@@ -74,49 +76,81 @@
         </div>
     </header><!-- #header -->
 
-    <section class="login">
-    <div class="limiter">
-        <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
-            <div class="wrap-login100">
-                <form class="login100-form validate-form">
-                    <span class="login100-form-logo" style="margin-bottom: 60px;">
-                        <i class="zmdi zmdi-landscape"></i>
-                    </span>
-
-                    
-                    <div class="wrap-input100 validate-input" data-validate="Enter username">
-                        <input class="input100" type="text" name="username" placeholder="Username">
-                        <span class="focus-input100" data-placeholder="&#xf207;"></span>
+    <div class="login">
+        <div class="login__content">
+            <div class="login__img">
+                <img src="../DIGIWASTE/img/login.svg" alt="">
+            </div>
+    
+            <div class="login__forms">
+                <form action="" class="login__registre" id="login-in">
+                    <!-- <h1 class="login__title">Sign In</h1> -->
+                    <img class="login__title" src="https://img.icons8.com/cotton/64/000000/gender-neutral-user--v1.png" />
+    
+                    <div class="login__box">
+                        <i class='bx bx-user login__icon'></i>
+                        <input type="text" placeholder="Compound name" class="login__input">
+                    </div>
+    
+                    <div class="login__box">
+                        <i class='bx bx-lock-alt login__icon'></i>
+                        <input type="password" placeholder="Password" class="login__input">
+                    </div>
+    
+                    <a href="#" class="login__forgot">Forgot password?</a>
+    
+                    <a href="#" class="login__button">LOGIN</a>
+    
+                    <div>
+                        <span class="login__account">Don't have an Account ?</span>
+                        <span class="login__signin" id="sign-up">Register</span>
+                    </div>
+                </form>
+    
+                <form action="" class="login__create register none" style="width: 120%;" id="login-up">
+                    <h1 class="login__title">Create Account</h1>
+    
+                    <div class="login__box" style="padding: .5rem;">
+                        <i class='bx bx-user login__icon'></i>
+                        <input type="text" placeholder="Lanlord name" class="login__input">
                     </div>
 
-                    <div class="wrap-input100 validate-input" data-validate="Enter password">
-                        <input class="input100" type="password" name="pass" placeholder="Password">
-                        <span class="focus-input100" data-placeholder="&#xf191;"></span>
+                    <div class="login__box" style="padding: .5rem;">
+                        <i class='bx bx-home-smile login__icon'></i>
+                        <input type="text" placeholder="Compound name" class="login__input">
                     </div>
 
-                    <div class="contact100-form-checkbox">
-                        <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-                        <label class="label-checkbox100" for="ckb1">
-                            Remember me
-                        </label>
+                    <div class="login__box" style="padding: .5rem;">
+                        <i class='bx bx-map login__icon'></i>
+                        <input type="text" placeholder="House Address" class="login__input">
+                    </div>
+    
+                    <div class="login__box" style="padding: .5rem;">
+                        <i class='bx bx-phone-call login__icon'></i>
+                        <input type="text" placeholder="Mobile Number" class="login__input">
                     </div>
 
-                    <div class="container-login100-form-btn">
-                        <button class="login100-form-btn">
-                            LOGIN
-                        </button>
+                    <div class="login__box" style="padding: .5rem;">
+                        <i class='bx bx-at login__icon'></i>
+                        <input type="text" placeholder="Email" class="login__input">
+                    </div>
+    
+                    <div class="login__box" style="padding: .5rem;">
+                        <i class='bx bx-lock-alt login__icon'></i>
+                        <input type="password" placeholder="Password" class="login__input">
+                    </div>
+    
+                    <a href="#" class="login__button" style="padding: .5rem;">REGISTER</a>
+    
+                    <div>
+                        <span class="login__account">Already have an Account ?</span>
+                        <span class="login__signup" id="sign-in">Sign In</span>
                     </div>
 
-                    <div class="text-center p-t-90">
-                        <a class="txt1" href="#">
-                            Forgot Password?
-                        </a>
-                    </div>
                 </form>
             </div>
         </div>
     </div>
-</section>
 
     <!-- <div id="dropDownSelect1"></div> -->
 
@@ -129,12 +163,6 @@
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <!--===============================================================================================-->
     <script src="vendor/select2/select2.min.js"></script>
-    <!--===============================================================================================-->
-    <script src="vendor/daterangepicker/moment.min.js"></script>
-    <script src="vendor/daterangepicker/daterangepicker.js"></script>
-    <!--===============================================================================================-->
-    <script src="vendor/countdowntime/countdowntime.js"></script>
-    <!--===============================================================================================-->
     <script src="js/login.js"></script>
     <script src="js/main.js"></script>
 </body>
