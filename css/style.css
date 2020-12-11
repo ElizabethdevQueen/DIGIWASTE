@@ -745,66 +745,127 @@ h6 {
 /* Testimonials Section
 --------------------------------*/
 
-#testimonials {
-  padding: 60px 0;
-  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  background: #004a99;
-}
+ @media (max-width:991.98px) {
+     .padding {
+         padding: 1.5rem
+     }
+ }
 
-#testimonials .section-header {
-  margin-bottom: 40px;
-  color: #fff;
-}
-#testimonials .section-header h3{
-  color: #fff;
-}
+ @media (max-width:767.98px) {
+     .padding {
+         padding: 1rem;
+     }
+ }
 
-#testimonials .testimonial-item .testimonial-img {
-  width: 120px;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  float: left;
-}
+ .padding {
+     padding: 5rem;
+ }
 
-#testimonials .testimonial-item h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-  color: #fff;
-  margin-left: 140px;
-}
+#testimonials .container .items .card {
+     /* position: relative; */
+     display: flex;
+     justify-content: space-evenly;
+     width: 250px;
+     /* flex-direction: column; */
+     min-width: 0;
+     word-wrap: break-word;
+     background-color: #fff;
+     background-clip: border-box;
+     border: 1px solid #d2d2dc;
+     border-radius: 11px;
+     -webkit-box-shadow: 0px 0px 5px 0px rgb(249, 249, 250);
+     -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1);
+     box-shadow: 0px 0px 5px 0px rgb(161, 163, 164);
+ }
 
-#testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: azure;
-  margin: 0 0 15px 0;
-  margin-left: 140px;
-}
+ #testimonials .container .items .card .card-body {
+     padding: 1rem 1rem;
+ }
 
-#testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 0 15px 140px;
-  color: #fff;
-}
+ #testimonials .container .items .card .card-body {
+     flex: 1 1 auto;
+     padding: 1.25rem;
+ }
 
-#testimonials .owl-nav,
-#testimonials .owl-dots {
-  margin-top: 5px;
-  text-align: center;
-}
+ .card-body p {
+     font-size: 0.875rem;
+     margin-bottom: .5rem;
+     line-height: 1.5rem;
+ }
 
-#testimonials .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ddd;
-}
+.card-body h4 {
+     line-height: .2 !important;
+ }
+ #testimonials{
+   height: 90vh;
+   padding: 1.5rem;
+ }
 
-#testimonials .owl-dot.active {
-  background-color: #007bff;
-}
+ #testimonials .container .items {
+     width: 100%;
+     /* height: 50vh; */
+     margin: 0px auto;
+     margin-top: 50px;
+     margin-bottom: 50px;
+     /* margin-right: 10px; */
+     display: flex;
+     justify-content: space-evenly;
+ }
+
+ .slick-slide {
+     margin: 10px;
+ }
+
+ .media iframe,
+ .media-content {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     border: 0;
+     border-radius: inherit;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: 50% 50%;
+     background-color: rgba(120, 120, 120, .1);
+     display: flex;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center;
+ }
+
+ .media-content:before {
+     content: '';
+     position: absolute;
+     height: 10%;
+     width: 90%;
+     left: 5%;
+     bottom: 0;
+     background: inherit;
+     background-position-y: 100%;
+     filter: blur(10px);
+ }
+
+ .circle .media-content:before {
+     width: 40%;
+     left: 30%;
+ }
+
+ .profile-image {
+     width: 100%;
+     height: 200px;
+     border-top-left-radius: 11px !important;
+     border-top-right-radius: 11px;
+ }
+
+ .card-title {
+     font-size: 19px;
+     font-weight: 200;
+ }
 
 /* Contact Section
 --------------------------------*/

@@ -90,16 +90,4 @@
         main_nav.find('a[href="#'+$(this).attr('id')+'"]').parent('li').addClass('active');
       }
     });
-  });
-
-  // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
-  });
-  
-
-});
-
+  })

@@ -18,11 +18,16 @@
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   
 </head>
@@ -260,69 +265,43 @@
     ============================-->
     <section id="testimonials" class="section-bg">
       <div class="container">
-
         <header class="section-header">
           <h3>Testimonials</h3>
         </header>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-
-            <div class="owl-carousel testimonials-carousel wow fadeInUp">
-    
-              <div class="testimonial-item">
-                <img src="img/Tobi.jpg" class="testimonial-img" alt="">
-                <h3>Tobi Akanji</h3>
-                <h4>Backend Developer</h4>
-                <p>
-                  Great experience using this platform. The Application made is easy for me to make payment without stress.
-                </p>
-              </div>
-    
-              <div class="testimonial-item">
-                <img src="img/Fyne.jpg" class="testimonial-img" alt="">
-                <h3>Fyne Angala</h3>
-                <h4>Frontend Developer</h4>
-                <p>
-                  Worrying about when the waste Management will come just became a thing of the past with the help of this application.
-                </p>
-              </div>
-    
-              <div class="testimonial-item">
-                <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <p>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                </p>
-              </div>
-    
-              <div class="testimonial-item">
-                <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
-                <h3>Rasheed Akanni</h3>
-                <h4>Frontend Developer</h4>
-                <p>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                </p>
-              </div>
-    
-              <div class="testimonial-item">
-                <img src="img/Job.jpg" class="testimonial-img" alt="">
-                <h3>Job Ugbem</h3>
-                <h4>Entrepreneur</h4>
-                <p>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                </p>
-              </div>
-
-            </div>
-
-          </div>
+        <div class="items">
+    <div class="card">
+        <div class="media media-2x1 gd-primary"> <img class="profile-image" src="img/Job.jpg"> </div>
+        <div class="card-body">
+            <h5 class="card-title">Job Ugbem</h5>
+            <p class="card-text">"Great experience using this platform. The Application made is easy for me to make payment without stress."</p>
         </div>
+    </div>
+    <div class="card">
+        <div class="media media-2x1 gd-primary"> <img class="profile-image" src="img/testimonial-3.jpg"> </div>
+        <div class="card-body">
+            <h5 class="card-title">Jena Karlis</h5>
+            <p class="card-text">"Worrying about when the waste Management will come just became a thing of the past with the help of this application."</p>
+        </div>
+    </div>
 
-
+    <div class="card">
+        <div class="media media-2x1 gd-primary"> <img class="profile-image" src="img/Fyne.jpg"> </div>
+        <div class="card-body">
+            <h5 class="card-title">Fyne Angala</h5>
+            <p class="card-text">"Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis."</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="media media-2x1 gd-primary"> <img class="profile-image" src="img/Tobi.jpg"> </div>
+        <div class="card-body">
+            <h5 class="card-title">Tobi Akanji</h5>
+            <p class="card-text">"Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt."</p>
+        </div>
+    </div>
+</div>
       </div>
-    </section><!-- #testimonials -->
+    </section>
+       
 
     <!--==========================
       Contact Section
@@ -465,7 +444,7 @@
       </div>
       <span class="border"></span>
       <div class="copy">
-        <p>&copy; 2020 | Designed by Team-Evolve </p>
+        <p>&copy; 2020 | Designed by Elizabeth Segun-Ajiboye </p>
       </div>
     </div>
   </footer>
